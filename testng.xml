@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="methods" thread-count="4">
+	<groups>
+		<run>
+			<include name="smoke"></include>
+				<include name="sanity"></include>
+				<include name="e2e"></include>
+				<!-- <exclude name="e2e"></exclude>-->
+				
+			
+		</run>
+	</groups>
+  <test  name="Test">
+    <classes>
+     <!-- <class name="Testngpackage.SkipTestCaseInExecution"/>
+      <class name="Testngpackage.TestCaseVerifyTitle"/>
+      <class name="Testngpackage.DataDrivenTesting"/>
+      <class name="Testngpackage.TestCase1"/>
+      <class name="Testngpackage.TestCase2ForSoftAssertion"/>-->
+      
+       <class name="Testngpackage.UseOFGroupTestCase"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
